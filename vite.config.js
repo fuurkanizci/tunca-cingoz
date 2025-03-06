@@ -10,4 +10,10 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    resolve: {
+        extensions: ['.js', '.json', '.vue', '.css']
+    },
+    optimizeDeps: {
+        include: ['swiper/css']
+    }
 });

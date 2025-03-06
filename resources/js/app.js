@@ -1,21 +1,20 @@
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-const swiper = new Swiper();
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination],
-    ...
+document.addEventListener("DOMContentLoaded", function() {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileNav = document.querySelector('.mobile-nav');

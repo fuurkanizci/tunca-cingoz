@@ -5,11 +5,13 @@
 @source '../../storage/framework/views/*.php';
 @source "../**/*.blade.php";
 @source "../**/*.js";
+@import 'swiper/css/bundle';
 
 
 
-
-
+.yazi-kirmizi{
+    color: red;
+}
 .header {
     display: flex;
     justify-content: space-between;

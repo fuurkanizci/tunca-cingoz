@@ -25,7 +25,7 @@
 
     <!-- Ortada: Navigasyon -->
     <nav class="nav hidden md:flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-gray-900">Ana Sayfa</a>
+        <a href="#" class="text-blue-600 hover:text-gray-900">Ana Sayfa</a>
         <a href="#" class="text-gray-700 hover:text-gray-900">Hakkımızda</a>
         <a href="#" class="text-gray-700 hover:text-gray-900">Hizmetler</a>
         <a href="#" class="text-gray-700 hover:text-gray-900">İletişim</a>

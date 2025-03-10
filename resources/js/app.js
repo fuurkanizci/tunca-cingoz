@@ -41,3 +41,14 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+document.querySelectorAll('.menu-link').forEach(item => {
+    item.addEventListener('click', function() {
+        // Tüm menü linklerinden 'active' sınıfını kaldır
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.classList.remove('text-violet-700'); // 'active' sınıfını kaldır
+        });
+
+        // Tıklanan linke 'active' sınıfı ekle
+        item.classList.add('text-violet-700');
+    });
+});

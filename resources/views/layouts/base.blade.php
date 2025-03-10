@@ -17,41 +17,22 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-<header class="header flex justify-between items-center p-4 bg-white shadow-md">
-    <!-- Sol Köşe: Logo -->
-    <a  href="">
-        <p class="text-3xl font-extrabold text-black text-start">DR.Tunca Cingöz</p>
-    </a>
+<header>
+   
 
-    <!-- Ortada: Navigasyon -->
-    <nav class="nav hidden md:flex space-x-6">
-        <a href="#" class="text-blue-600 hover:text-gray-900">Ana Sayfa</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">Hakkımızda</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">Hizmetler</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">İletişim</a>
-    </nav>
-
-    <!-- Sağ Köşe - Boş Bırakıldı -->
-    <div class="right">
-        <!-- Buraya başka içerikler eklenebilir -->
+<div class="container px-4 flex justify-between items-center">
+    <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/logo.jpg') }}" alt="Logo" class="w-36 ml-10 my-4">
+    
+    <div class="flex gap-5 justify-center items-center w-full">
+        <div><a href="#" class="menu-link hover:text-[#17436d]">home</a></div>
+        <div><a href="#" class="menu-link hover:text-violet-600">about</a></div>
+        <div><a href="#" class="menu-link hover:text-violet-600">contact</a></div>
+        <div><a href="#" class="menu-link hover:text-violet-600">services</a></div>
     </div>
+</div>
 
-    <!-- Mobil Menü Butonu -->
-    <!-- Mobil Menü Butonu -->
-    <button class="mobile-menu p-2 rounded-md text-gray-700 focus:outline-none md:hidden" id="mobileMenuButton">
-        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-    </button>
-</header>
+    </header>
 
-<!-- Mobil Menü -->
-<nav class="mobile-nav bg-white shadow-md absolute left-0 right-0 top-16 p-4 md:hidden">
-    <a href="#" class="block text-gray-700 hover:text-gray-900">Ana Sayfa</a>
-    <a href="#" class="block text-gray-700 hover:text-gray-900">Hakkımızda</a>
-    <a href="#" class="block text-gray-700 hover:text-gray-900">Hizmetler</a>
-    <a href="#" class="block text-gray-700 hover:text-gray-900">İletişim</a>
-</nav>
 
 @yield('body')
 

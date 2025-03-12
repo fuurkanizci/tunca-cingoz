@@ -65,11 +65,11 @@
 
 </div>
 <div class="grid grid-cols-5 max-md:grid-cols-2 gap-1  text-white  ">
-  <div class="bg-[#191F2C] mx-2">01</div>
-  <div class="bg-[#191F2C] mx-2">02</div>
-  <div class="bg-[#191F2C] mx-2">03</div>
-  <div class="bg-[#191F2C] mx-2">04</div>
-  <div class="bg-[#191F2C] mx-2">05</div>
+  <div class="bg-[#FF10F0] mx-2">01</div>
+  <div class="bg-[#FF10F0] mx-2">02</div>
+  <div class="bg-[#FF10F0] mx-2">03</div>
+  <div class="bg-[#FF10F0] mx-2">04</div>
+  <div class="bg-[#FF10F0] mx-2">05</div>
 </div>
 
 @endsection

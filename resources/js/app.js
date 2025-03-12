@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 0,
     centeredSlides: true,
     loop: true,
     // autoplay: {
@@ -41,14 +41,73 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+
 document.querySelectorAll('.menu-link').forEach(item => {
     item.addEventListener('click', function() {
         // Tüm menü linklerinden 'active' sınıfını kaldır
         document.querySelectorAll('.menu-link').forEach(link => {
-            link.classList.remove('text-violet-700'); // 'active' sınıfını kaldır
+            link.classList.remove('text-[#05cbc8]'); // 'active' sınıfını kaldır
         });
 
         // Tıklanan linke 'active' sınıfı ekle
-        item.classList.add('text-violet-700');
+        item.classList.add('text-[#05cbc8]');
     });
 });
+
+
+
+document.querySelectorAll('.mobile-menu-link').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.classList.remove('text-[#05cbc8]');
+        });
+        item.classList.add('text-[#05cbc8]');
+    });
+});
+document.querySelectorAll('.menu-link').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.classList.remove('text-[#05cbc8]');
+        });
+        item.classList.add('text-[#05cbc8]');
+    });
+});
+
+  document.querySelectorAll('.mobile-menu-link').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.classList.remove('text-[#05cbc8]');
+        });
+        item.classList.add('text-[#05cbc8]');
+    });
+});
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
+
+    menuToggle.addEventListener("click", function() {
+        mobileMenu.classList.remove("top-[-100%]", "opacity-0", "pointer-events-none");
+        mobileMenu.classList.add("top-0", "opacity-100");
+    });
+
+    menuClose.addEventListener("click", function() {
+        mobileMenu.classList.remove("top-0", "opacity-100");
+        mobileMenu.classList.add("top-[-100%]", "opacity-0", "pointer-events-none");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            mobileMenu.classList.remove("top-0", "opacity-100");
+            mobileMenu.classList.add("top-[-100%]", "opacity-0", "pointer-events-none");
+        }
+    });
+
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            mobileMenu.classList.remove("top-0", "opacity-100");
+            mobileMenu.classList.add("top-[-100%]", "opacity-0", "pointer-events-none");
+        });
+    });

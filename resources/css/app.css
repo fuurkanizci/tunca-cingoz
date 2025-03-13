@@ -56,3 +56,22 @@ body{
 
 
 }
+/* Hover efekti uygulamak için özel sınıf */
+.hover-settings i{
+  color: blue;
+}
+
+/* Hover durumunda icon rengini değiştirme */
+.hover-settings:hover i {
+  color: aqua;
+}
+
+/* Diğer hover davranışları */
+.hover-settings:hover {
+  background-color: #e7ecee;
+}
+
+.hover-settings:hover i {
+  color: aqua;
+  transition: ease-in-out 0.2s;
+}

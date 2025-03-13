@@ -111,3 +111,4 @@ document.querySelectorAll('.menu-link').forEach(item => {
             mobileMenu.classList.add("top-[-100%]", "opacity-0", "pointer-events-none");
         });
     });
+    

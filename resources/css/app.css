@@ -44,6 +44,28 @@ body{
     font-weight: 700;
     max-width: 44rem;
 }
+
+/* Prev ve Next butonlarındaki font boyutunu artırma */
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 10px !important; /* Burada font boyutunu artırabilirsiniz */
+}
+
+/* Next butonunun boyutlarını ayarlama */
+.swiper-button-next {
+    color: white !important;
+    border: 2px solid white;
+    border-radius: 100%; /* Butonu yuvarlak yapmak için */
+    padding: 21px; 
+}
+
+/* Prev butonunun boyutlarını ayarlama */
+.swiper-button-prev {
+    color: white !important;
+    border-radius: 100%; /* Butonu yuvarlak yapmak için */
+    border: 2px solid white;
+    padding: 21px; /* Butonun iç dolgusunu artırma */
+}
+
 .select-disable {
 
     -webkit-user-select: none;
@@ -55,23 +77,4 @@ body{
     user-select: none;
 
 
-}
-/* Hover efekti uygulamak için özel sınıf */
-.hover-settings i{
-  color: blue;
-}
-
-/* Hover durumunda icon rengini değiştirme */
-.hover-settings:hover i {
-  color: aqua;
-}
-
-/* Diğer hover davranışları */
-.hover-settings:hover {
-  background-color: #e7ecee;
-}
-
-.hover-settings:hover i {
-  color: aqua;
-  transition: ease-in-out 0.2s;
 }

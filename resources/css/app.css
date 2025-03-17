@@ -13,6 +13,12 @@ body{
    
     font-family: "Poppins", sans-serif;
 }
+
+
+
+
+
+
 /* Animasyon efekti */
 @keyframes zoomEffect {
     0% {
@@ -37,12 +43,12 @@ body{
 }
 
 .slider-elements{
-    padding-left: 20rem;
+    padding-left: 10rem;
 }
 .slider-elements p{
     font-size: 5rem;
     font-weight: 700;
-    max-width: 44rem;
+    max-width: 50rem;
 }
 
 /* Prev ve Next butonlarındaki font boyutunu artırma */
@@ -76,5 +82,136 @@ body{
 
     user-select: none;
 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .slider-elements{
+    padding-left: 5rem ;
+}
+.slider-elements p{
+    font-size: 4rem ;
+    font-weight: 500 ;
+    max-width: 35rem;
+}
+
+}
+@media screen and (max-width: 768px) {
+    .slider-elements{
+    padding-left: 5rem ;
+}
+.slider-elements p{
+    font-size: 3rem ;
+    font-weight: 400 ;
+    max-width: 35rem;
+}
+/* Prev ve Next butonlarındaki font boyutunu artırma */
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 10px !important; /* Burada font boyutunu artırabilirsiniz */
+}
+
+/* Next butonunun boyutlarını ayarlama */
+.swiper-button-next {
+    color: rte !important;
+    border: 1px solid white;
+    border-radius: 100%; /* Butonu yuvarlak yapmak için */
+    padding: 21px; 
+}
+
+/* Prev butonunun boyutlarını ayarlama */
+.swiper-button-prev {
+    color: white !important;
+    border-radius: 100%; /* Butonu yuvarlak yapmak için */
+    border: 1px solid white;
+    padding: 21px; /* Butonun iç dolgusunu artırma */
+}
+
+}
+@media screen and (max-width: 640px) {
+    .arrow-hidden{
+    display: none;
+}
+    .slider-elements{
+    padding-left: 4rem ;
+}
+.slider-elements p{
+    font-size: 2rem ;
+    font-weight: 300 ;
+    max-width: 18rem;
+}
+/* Prev ve Next butonlarındaki font boyutunu artırma */
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 10px !important; /* Burada font boyutunu artırabilirsiniz */
+}
+
+/* Next butonunun boyutlarını ayarlama */
+.swiper-button-next {
+      color: white !important;
+    border: 0px solid ;
+    padding: 0; /* Butonun iç dolgusunu artırma */
+}
+
+/* Prev butonunun boyutlarını ayarlama */
+.swiper-button-prev {
+    color: white !important;
+    border: 0px solid ;
+    padding: 0; /* Butonun iç dolgusunu artırma */
+}
+
+}
+@media screen and (max-width: 380px) {
+    .slider-elements{
+    padding-left: 4rem ;
+}
+.slider-elements p{
+    font-size: 1rem ;
+    font-weight: 300 ;
+    max-width: 10rem;
+}
+
+.grid-links-settings{
+    grid-template-columns: repeat(1, minmax(0, 1fr)) ;
+    
+}
 
 }

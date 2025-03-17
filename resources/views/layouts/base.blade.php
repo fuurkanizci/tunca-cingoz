@@ -21,8 +21,8 @@
 </head>
 <body>
 <header>
-    <div class="container px-4 flex justify-between items-center relative min-h-[125px]">
-        <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/logo.jpg') }}" alt="Logo" class="w-36 ml-10 my-4">
+    <div class="container px-4 flex justify-between items-center relative min-h-[125px] max-md:min-h-0">
+        <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/logo.jpg') }}" alt="Logo" class="w-36 ml-10 max-sm:ml-0 my-4">
         
         <!-- Mobil Menü Butonu -->
         <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
@@ -44,17 +44,18 @@
     </div>
 
     <!-- Mobil Menü İçeriği -->
-    <div id="mobile-menu" class="fixed top-[-100%] left-0 w-full h-[80%] bg-white flex flex-col items-center justify-center z-50 transition-all duration-300 shadow-lg pointer-events-none">
+    <div id="mobile-menu" class="fixed top-[-100%] left-0 w-full h-[80%] max-md:h-[80%]  bg-white flex flex-col  justify-center z-50 transition-all duration-300 shadow-lg pointer-events-none ">
         <button id="menu-close" class="absolute top-5 right-5 text-gray-700 text-3xl hover:text-red-600 transition ease-in">&times;</button>
-        <a href="#"> <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/logo.jpg') }}" alt="Logo" class="w-36 ml-10 my-4 absolute top-5 left-2"></a>
-        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">             Home</a>
-            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">Find a Physician</a>
-            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">About</a>
-            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">        Features</a>
-        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">    Our Services</a>
-        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">       Resources</a>
-        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2">      Contact Us</a>
-    </div>
+        <a href="#"> <img src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/logo.jpg') }}" alt="Logo" class="w-36 ml-10 my-4 absolute top-5 left-2 max-sm:ml-0"></a>
+        <div class="ml-4 flex flex-col">
+        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm ">             Home</a>
+            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm"> Find a Physician</a>
+            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm"> About</a>
+            <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm">         Features</a>
+        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm">     Our Services</a>
+        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm">        Resources</a>
+        <a href="#" class="mobile-menu-link hover:text-[#05cbc8] transition ease-in text-2xl my-2 max-md:text-sm">       Contact Us</a>
+    </div></div>
 </header>
 
 

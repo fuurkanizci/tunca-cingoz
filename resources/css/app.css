@@ -175,9 +175,9 @@ body{
     padding-left: 4rem ;
 }
 .slider-elements p{
-    font-size: 2rem ;
+    font-size: 3rem ;
     font-weight: 300 ;
-    max-width: 18rem;
+    max-width: 32rem;
 }
 /* Prev ve Next butonlarındaki font boyutunu artırma */
 .swiper-button-prev:after, .swiper-button-next:after {
@@ -200,14 +200,7 @@ body{
 
 }
 @media screen and (max-width: 380px) {
-    .slider-elements{
-    padding-left: 4rem ;
-}
-.slider-elements p{
-    font-size: 1rem ;
-    font-weight: 300 ;
-    max-width: 10rem;
-}
+
 
 .grid-links-settings{
     grid-template-columns: repeat(1, minmax(0, 1fr)) ;

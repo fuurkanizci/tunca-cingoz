@@ -84,6 +84,76 @@ body{
 
 
 }
+.appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/resources/views/images/bg-18.jpg') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.form-section {
+    border-radius: 10px;
+    max-width: 450px;
+    text-align: start;
+        right: 38rem;
+    position: absolute;
+    left: 20rem;
+}
+.title-text{
+         font-size: 45px;
+    font-weight: bold;
+    color: #123456;
+    margin-bottom: 20px;
+    width: 35rem;
+}
+.small-text {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    align-items: start;
+    background: #00d4a2;
+    color: white;
+    border: none;
+    padding: 16px 45px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+}
+
+.submit-btn:hover {
+    background: #00b48c;
+}
 
 
 
@@ -118,6 +188,12 @@ body{
 
 
 
+@media screen and (max-width: 1450px) {
+ .form-section {
+    position: static;
+}
+
+}
 
 
 
@@ -168,6 +244,28 @@ body{
 
 }
 @media screen and (max-width: 640px) {
+    .submit-btn {
+    padding: 10px 25px;
+    font-size: 12px;
+}
+    .title-text{
+         font-size: 30px;
+         
+    width: unset;
+}
+.small-text {
+    font-size: 15px;
+}
+    .input-group input,
+.input-group select {
+    font-size: 13px;
+}
+    .appointment-container {
+    justify-content: start;
+}
+    .form-section {
+    position: unset;
+}
     .arrow-hidden{
     display: none;
 }
@@ -199,9 +297,36 @@ body{
 }
 
 }
+@media screen and (max-width: 490px) {
+    .title-text{
+         font-size: 30px;
+}
+.small-text {
+   
+    font-size: 15px;
+}
+.input-group input,
+.input-group select {
+  
+ flex: unset;
+width: 7rem;
+}
+
+}
+
+
 @media screen and (max-width: 380px) {
 
-
+.checkbox-group {
+          font-size: 13px;
+        padding-right: 12rem;
+}
+.title-text{
+         font-size: 23px;
+}
+.small-text {
+    font-size: 12px;
+}
 .grid-links-settings{
     grid-template-columns: repeat(1, minmax(0, 1fr)) ;
     

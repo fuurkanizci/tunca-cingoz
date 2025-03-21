@@ -52,7 +52,7 @@
     <div class="swiper-button-prev"></div>
 </div>
 
-<div class="grid grid-cols-3 max-xl:cols-2 max-md:cols-1"></div>
+<div class="grid grid-cols-3 max-xl:cols-2 max-md:cols-1 "></div>
 <div class="min-h-[175px] max-md:min-h-30  bg-[#191F2C] text-white flex items-center justify-center flex-row gap-12 font-semibold max-xl:flex-wrap max-md:gap-0 max-lg:text-start max-lg:justify-start">
   <div class="flex items-center justify-center text-center gap-2  max-xl:flex-wrap max-lg:text-start max-lg:justify-start max-lg:ml-3">
     <div class="text-3xl uppercase max-md:text-lg max-sm:text-sm">Sprains, strains and pains?</div>
@@ -65,7 +65,7 @@
   </div>
 </div>
 
-<div class="grid grid-cols-5 max-md:grid-cols-2 max-lg:grid-cols-4 grid-links-settings max-[]: gap-4 bg-stone-100 leading-6  ">
+<div class="grid grid-cols-5 max-md:grid-cols-2 max-lg:grid-cols-4 grid-links-settings max-[]: gap-4 bg-stone-100 leading-6  mb-20">
   <!-- Kart 1 -->
   <a href="" class="w-full drop-shadow-lg">
  <div class="mx-2 flex flex-col items-center justify-center group overflow-visible hover:bg-[#e7ecee] relative  mt-4 ">
@@ -242,5 +242,119 @@
     </div>
   </a>
 </div>
+
+<div class="appointment-container mb-26">
+    <div class="form-section">
+      <div class="text-start">
+        <p class="small-text">Have a Question? Chat with professional</p>
+        <p class="title-text">Don't put up with pain!<br>Make an appointment</h1>
+        </div>
+        <form action="#" method="POST">
+            @csrf
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Your Phone" required>
+            </div>
+            <div class="input-group">
+                <select name="interest" required>
+                    <option value="">Interested In:</option>
+                    <option value="Physiotherapy">Physiotherapy</option>
+                    <option value="Rehabilitation">Rehabilitation</option>
+                </select>
+                <input type="date" name="date" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="agreement" required>
+                <label for="agreement"><p class="w-max max-sm:w-auto">I agree that my submitted data is being collected and stored.</p></label>
+            </div>
+            <button type="submit" class="submit-btn">Submit form <i class=" fa-solid fa-angle-right border-2 border-white rounded-full py-2 px-3 ml-4 max-sm:py-1 max-sm:px-2 "></i></button>
+        </form>
+    </div>
+</div> 
+<div class="container mx-auto text-center my-4">
+    <div class="font-bold">
+        <div class="text-xl text-cyan-400 max-sm:text-sm">Our Advantages & Capabilities</div>
+        <div class="text-5xl text-[#123456] max-sm:text-2xl">Why patients choose us</div>
+    </div>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 p-6 justify-center">
+    <!-- İşçi Tazminatı Kartı -->
+    <div class="flex flex-col items-center text-center mt-6 max-w-sm mx-auto">
+        <div class="mb-6 w-full">
+            <img 
+                src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/resim-1.jpg') }}" 
+                alt="Logo" 
+                class="transition-opacity duration-300 w-full h-full object-cover"
+            >
+        </div>
+        <div class="mb-4 text-2xl text-[#123456] font-bold">İşçi Tazminatı</div>
+        <p class="mb-6 text-gray-700">
+            Uzman doktorlarımız ve sağlık hizmeti sağlayıcılarımız, yaralı çalışanlara bireyselleştirilmiş ve kaliteli bakım sunarak, 
+            onları güvenli ve hızlı bir şekilde işe geri döndürmeyi amaçlamaktadır. Tüm bakım sürecini koordine eden özel bir departmanımız bulunmaktadır.
+        </p>
+        <a href="" class="text-cyan-500 hover:text-blue-500 group transition ease-in-out">
+            <div class="text-cyan-500 hover:text-blue-500 transition ease-in-out font-bold">
+                Daha fazla
+                <i 
+                    class="fa-solid fa-angle-right border-3 border-cyan-500 rounded-full p-1 px-2 ml-4 
+                        max-sm:py-1 max-sm:px-2 text-md group-hover:border-blue-500">
+                </i>
+            </div>
+        </a>
+    </div>
+
+    <!-- İşçi Tazminatı Kartı -->
+    <div class="flex flex-col items-center text-center mt-6 max-w-sm mx-auto">
+        <div class="mb-6 w-full">
+            <img 
+                src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/resim-1.jpg') }}" 
+                alt="Logo" 
+                class="transition-opacity duration-300 w-full h-full object-cover"
+            >
+        </div>
+        <div class="mb-4 text-2xl text-[#123456] font-bold">İşçi Tazminatı</div>
+        <p class="mb-6 text-gray-700">
+            Uzman doktorlarımız ve sağlık hizmeti sağlayıcılarımız, yaralı çalışanlara bireyselleştirilmiş ve kaliteli bakım sunarak, 
+            onları güvenli ve hızlı bir şekilde işe geri döndürmeyi amaçlamaktadır. Tüm bakım sürecini koordine eden özel bir departmanımız bulunmaktadır.
+        </p>
+        <a href="" class="text-cyan-500 hover:text-blue-500 group transition ease-in-out">
+            <div class="text-cyan-500 hover:text-blue-500 transition ease-in-out font-bold">
+                Daha fazla
+                <i 
+                    class="fa-solid fa-angle-right border-3 border-cyan-500 rounded-full p-1 px-2 ml-4 
+                        max-sm:py-1 max-sm:px-2 text-md group-hover:border-blue-500">
+                </i>
+            </div>
+        </a>
+    </div>
+
+    <!-- İşçi Tazminatı Kartı -->
+    <div class="flex flex-col items-center text-center mt-6 max-w-sm mx-auto">
+        <div class="mb-6 w-full">
+            <img 
+                src="{{ \Illuminate\Support\Facades\Vite::asset('resources/views/images/resim-1.jpg') }}" 
+                alt="Logo" 
+                class="transition-opacity duration-300 w-full h-full object-cover"
+            >
+        </div>
+        <div class="mb-4 text-2xl text-[#123456] font-bold">İşçi Tazminatı</div>
+        <p class="mb-6 text-gray-700">
+            Uzman doktorlarımız ve sağlık hizmeti sağlayıcılarımız, yaralı çalışanlara bireyselleştirilmiş ve kaliteli bakım sunarak, 
+            onları güvenli ve hızlı bir şekilde işe geri döndürmeyi amaçlamaktadır. Tüm bakım sürecini koordine eden özel bir departmanımız bulunmaktadır.
+        </p>
+        <a href="" class="text-cyan-500 hover:text-blue-500 group transition ease-in-out">
+            <div class="text-cyan-500 hover:text-blue-500 transition ease-in-out font-bold">
+                Daha fazla
+                <i 
+                    class="fa-solid fa-angle-right border-3 border-cyan-500 rounded-full p-1 px-2 ml-4 
+                        max-sm:py-1 max-sm:px-2 text-md group-hover:border-blue-500">
+                </i>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
 
 @endsection 
